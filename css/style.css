@@ -1,0 +1,163 @@
+/*-----------------------------------*\
+  #ROOT PROPERTY                   
+\*-----------------------------------*/
+
+:root {
+  --background-color: #ffffff;
+  --color           : #161722;
+  --primary-color   : #1e90ff;
+  --circle-two      : #ff1493;
+}
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+  background: var(--background-color);
+  color: var(--color);
+}
+
+
+/*-----------------------------------*\
+  #CONTAINER
+\*-----------------------------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+/*-----------------------------------*\
+  #LOGIN CONTAINER PROPERTY
+\*-----------------------------------*/
+
+.login-container {
+  width: 22.2em;
+  position: relative;
+}
+
+
+/*-----------------------------------*\
+  #FORM CONTAINER PROPERTY
+\*-----------------------------------*/
+
+.form-container {
+  border: 1px solid #a6a6a628;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 36px 1px #00000033;
+  backdrop-filter: blur(20px);
+  z-index: 99;
+}
+
+.form-container form input {
+  display: block;
+  padding: 15px;
+  margin: 2rem 0;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 500;
+  color: var(--color);
+  background: #ffffff;
+  box-shadow: 0 0 6px #0000001a;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  transition: box-shadow 0.4s ease;
+  text-transform: uppercase;
+}
+
+.form-container form input:focus {
+  box-shadow: 5px 5px 10px #0000001a, -5px -5px 10px #0000001a;
+}
+
+.form-container form button {
+  display: block;
+  padding: 13px;
+  width: 100%;
+  margin: 2rem 0;
+  background-color: var(--primary-color);
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.form-container form button:hover {
+  opacity: 0.8;
+}
+
+
+/*-----------------------------------*\
+  #REGISTER-FORGOT PROPTERTY
+\*-----------------------------------*/
+
+a {
+  text-decoration: none;
+  color: #161722;
+}
+
+.register-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.4s ease;
+  letter-spacing: 1.5px;
+}
+
+.register-forgot a:hover {
+  color: #046422;
+  text-decoration: underline;
+  transition: color .4s ease;
+}
+
+.opacity {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+
+/*-----------------------------------*\
+  #CIRCLE PROPERTY
+\*-----------------------------------*/
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  background: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-one {
+  top: 0;
+  left: 0;
+  transform: translate(-45%, -45%);
+  z-index: -1;
+}
+
+.circle-two {
+  bottom: 0;
+  right: 0;
+  background: var(--circle-two);
+  transform: translate(45%, 45%);
+  z-index: -1;
+}
